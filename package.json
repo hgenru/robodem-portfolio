@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "phenomic start",
-    "dist": "phenomic build"
+    "dist": "phenomic build",
+    "deploy": "gh-pages -d dist"
   },
   "phenomic": {
     "presets": [
@@ -17,7 +18,8 @@
   "devDependencies": {
     "@phenomic/cli": "^1.0.0-alpha.3",
     "@phenomic/core": "^1.0.0-alpha.3",
-    "@phenomic/preset-react-app": "^1.0.0-alpha.3"
+    "@phenomic/preset-react-app": "^1.0.0-alpha.3",
+    "gh-pages": "^1.0.0"
   },
   "dependencies": {
     "react": "^15.5.4",
