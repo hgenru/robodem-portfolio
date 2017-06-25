@@ -7,7 +7,7 @@ import CaseDescriptionText from '../../../components/case/CaseDescriptionText.js
 import CaseDescriptionBlueprint from '../../../components/case/CaseDescriptionBlueprint.js';
 import CaseMedia from '../../../components/case/CaseMedia.js';
 
-const ASSETS = '/cases/mosaic';
+const ASSETS = './cases/mosaic';
 const HEADER_PIC = `${ASSETS}/header-pic.png`;
 const BLUEPRINT_PIC = `${ASSETS}/blueprint.png`;
 

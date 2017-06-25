@@ -28,7 +28,7 @@ export const Home = () => (
     <div>
         <Head>
             <link href={FONT_URL} rel="stylesheet"/>
-            <link href="styles.css" rel="stylesheet"/>
+            <link href="./styles.css" rel="stylesheet"/>
         </Head>
 
         <main className="content">

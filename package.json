@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "phenomic start",
-    "dist": "phenomic build",
+    "dist": "phenomic build && cp -r public/* dist/",
     "deploy": "gh-pages -d dist"
   },
   "phenomic": {
