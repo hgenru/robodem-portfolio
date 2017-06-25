@@ -1,6 +1,8 @@
 .intro_section
 {
     height: 100vh;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .intro_section__header
@@ -12,12 +14,20 @@
 .intro_section__head
 {
     text-transform: uppercase;
-    font-size: 7em;
+    font-size: 2em;
     margin: 0;
 }
 
 .intro_section__text
 {
     max-width: 30em;
-    font-size: 2em;
+}
+
+@media (max-width : 768px) {
+    .intro_section
+    {
+        height: 100%;
+        height: initial;
+        font-size: 5vw;
+    }
 }

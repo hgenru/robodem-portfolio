@@ -1,44 +1,90 @@
 .case
 {
-    width: 100%;
+    margin-top: 4rem;
 }
 
 .case__header
 {
     position: relative;
-    font-size: 3em;
-    max-width: 15em;
-    margin-top: 2em;
+    font-size: 3rem;
+    max-width: 40rem;
     margin-bottom: 0.7em;
 }
 
-.case__header > h1
+.case__header__substrate,
+.case__header__img
 {
-    margin: -20px 0;
-    padding: 20px 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+}
+
+.case__header__substrate
+{
+    height: 4em;
+    width: 4em;
+    left: -1rem;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .case__header__img
 {
-    position: absolute;
-    z-index: -1;
-    max-width: 4em;
+    max-height: 4em;
     left: -2em;
+}
+
+.case__header > h1
+{
+    margin: 0;
 }
 
 .case__content
 {
     display: flex;
+    margin: -0.5rem;
 }
 
-.case__text
+.case__description,
+.case__media
+{
+    padding: 0.5rem;
+    margin: -0.25rem;
+}
+
+.case__description > *,
+.case__media > *
+{
+    padding: 0.25rem;
+    padding-bottom: 0.75rem;
+}
+
+.case__description
 {
     max-width: 600px;
     min-width: 400px;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.case__description_text,
+.case__description_blueprint
+{
     margin: 0;
-    padding-right: 1em;
-    padding-bottom: 1em;
+}
+
+.case__description_blueprint
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.case__description_blueprint > img
+{
+    max-width: 100%;
 }
 
 .case__media
@@ -47,12 +93,6 @@
     min-width: 300px;
     flex-grow: 1;
     flex-shrink: 1;
-    margin: -0.5em;
-}
-
-.case__media > *
-{
-    padding: 0.7em;
 }
 
 .case__media img
@@ -69,16 +109,22 @@
 
 .case__media figcaption
 {
+    font-size: 0.8em;
     text-align: center;
 }
 
 @media (max-width : 768px) {
-    .case__content
+    .case__header
     {
-        flex-direction: column;
+        font-size: 2rem;
     }
 
-    .case__text,
+    .case__content
+    {
+        flex-wrap: wrap;
+    }
+
+    .case__description,
     .case__media
     {
         max-width: initial;
@@ -90,12 +136,10 @@
     {
         display: flex;
         flex-wrap: wrap;
-        margin: -0.2em;
     }
 
-    .case__media figure
+    .case__media > *
     {
         flex-basis: 40%;
-        padding: 0.2em;
     }
 }

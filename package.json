@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "phenomic start",
-    "build": "phenomic build"
+    "dist": "phenomic build"
   },
   "phenomic": {
     "presets": [

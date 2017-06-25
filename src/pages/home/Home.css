@@ -3,12 +3,17 @@ body
     margin: 0;
 }
 
-.fonts-hide body
+body *
 {
-    color: transparent !important;
+    box-sizing: border-box;
 }
 
-.fonts-loaded body
+.fonts--not-loaded body
+{
+    opacity: 0 !important;
+}
+
+.fonts--loaded body
 {
     font-family: 'Roboto', sans-serif;
 }
@@ -17,11 +22,4 @@ body
 {
     max-width: 1100px;
     margin: 0 auto;
-}
-
-@media (max-device-width : 768px) {
-    body
-    {
-        font-size: 1.3em;
-    }
 }
