@@ -1,0 +1,27 @@
+body
+{
+    margin: 0;
+}
+
+.fonts-hide body
+{
+    color: transparent !important;
+}
+
+.fonts-loaded body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.content
+{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (max-device-width : 768px) {
+    body
+    {
+        font-size: 1.3em;
+    }
+}
