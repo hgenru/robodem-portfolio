@@ -13728,7 +13728,6 @@ function createApp() {
     if (global.window) {
         basename = location.pathname;
     }
-    console.log('Use basename ' + basename);
     var browserHistory = (0, _reactRouter.useRouterHistory)(_history.createHistory)({ basename: basename });
     return _react2.default.createElement(_reactRouter.Router, { routes: routes, history: browserHistory });
 }

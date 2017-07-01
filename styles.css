@@ -85,7 +85,7 @@ body *
 .case__media > *
 {
     padding: 0.25rem;
-    padding-bottom: 0.75rem;
+    padding-bottom: 1rem;
 }
 
 .case__description
@@ -172,7 +172,8 @@ body *
     {
         flex-basis: 40%;
     }
-}.intro_section
+}
+.intro_section
 {
     height: 100vh;
     font-size: 2rem;
