@@ -5,6 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = () => ({
     entry: {
         index: path.resolve(__dirname, './index.js'),
+        fontsLoader: path.resolve(__dirname, './fonts-loader.js'),
         staticBuilderEntry: path.resolve(__dirname, './index-static.js')
     },
     output: {

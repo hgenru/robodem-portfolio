@@ -55,7 +55,7 @@
 .case__media > *
 {
     padding: 0.25rem;
-    padding-bottom: 0.75rem;
+    padding-bottom: 1rem;
 }
 
 .case__description
