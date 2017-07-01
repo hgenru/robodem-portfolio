@@ -1,0 +1,20 @@
+<html>
+
+<head <%- helmet.htmlAttributes %>>
+    <meta charset="utf-8">
+    <%- helmet.title %>
+    <%- helmet.meta %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+    <%- helmet.base %>
+    <%- helmet.link %>
+    <%- helmet.script %>
+    <%- helmet.style %>
+</head>
+
+<body>
+    <div id="app"><%- app %></div>
+    <script src="index.bundle.js"></script>
+</body>
+
+</html>
