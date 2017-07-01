@@ -13703,9 +13703,8 @@ var routes = exports.routes = _react2.default.createElement(_reactRouter.Route, 
 function createApp() {
     var basename = void 0;
     if (global.window) {
-        var baseElement = document.querySelector('base');
         if (baseElement) {
-            basename = baseElement.getAttribute('href');
+            basename = [location.protocol, '//', location.host, location.pathname].join('');
         }
     }
     var browserHistory = (0, _reactRouter.useRouterHistory)(_history.createHistory)({ basename: basename });
