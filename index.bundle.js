@@ -13724,10 +13724,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var routes = exports.routes = _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Home.Home });
 
 function createApp() {
-    var basename = void 0;
+    var basename = './';
     if (global.window) {
         basename = [location.protocol, '//', location.host, location.pathname].join('');
     }
+    console.log('Use basename ' + basename);
     var browserHistory = (0, _reactRouter.useRouterHistory)(_history.createHistory)({ basename: basename });
     return _react2.default.createElement(_reactRouter.Router, { routes: routes, history: browserHistory });
 }
