@@ -13726,7 +13726,7 @@ var routes = exports.routes = _react2.default.createElement(_reactRouter.Route, 
 function createApp() {
     var basename = './';
     if (global.window) {
-        basename = [location.protocol, '//', location.host, location.pathname].join('');
+        basename = location.pathname;
     }
     console.log('Use basename ' + basename);
     var browserHistory = (0, _reactRouter.useRouterHistory)(_history.createHistory)({ basename: basename });
