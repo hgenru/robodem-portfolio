@@ -5941,25 +5941,6 @@ function CaseSection(_ref) {
         children
     );
 }
-// CONCATENATED MODULE: ./src/components/case/CaseHeader.js
-/* harmony import */ var CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var CaseHeader___WEBPACK_IMPORTED_MODULE_1__Case_css__ = __webpack_require__(6);
-/* harmony import */ var CaseHeader___WEBPACK_IMPORTED_MODULE_1__Case_css___default = __webpack_require__.n(CaseHeader___WEBPACK_IMPORTED_MODULE_1__Case_css__);
-
-
-
-function CaseHeader(_ref) {
-    var children = _ref.children,
-        picture = _ref.picture;
-
-    return CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
-        'header',
-        { className: 'case__header' },
-        CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement('img', { className: 'case__header__img', src: picture }),
-        CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement('div', { className: 'case__header__substrate' }),
-        CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement('h1', { dangerouslySetInnerHTML: { __html: children } })
-    );
-}
 // CONCATENATED MODULE: ./src/components/case/CaseContent.js
 /* harmony import */ var CaseContent___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var CaseContent___WEBPACK_IMPORTED_MODULE_1__Case_css__ = __webpack_require__(6);
@@ -6036,6 +6017,25 @@ function CaseMedia(_ref) {
         children
     );
 }
+// CONCATENATED MODULE: ./src/components/case/CaseHeader.js
+/* harmony import */ var CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var CaseHeader___WEBPACK_IMPORTED_MODULE_1__Case_css__ = __webpack_require__(6);
+/* harmony import */ var CaseHeader___WEBPACK_IMPORTED_MODULE_1__Case_css___default = __webpack_require__.n(CaseHeader___WEBPACK_IMPORTED_MODULE_1__Case_css__);
+
+
+
+function CaseHeader(_ref) {
+    var children = _ref.children,
+        picture = _ref.picture;
+
+    return CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+        'header',
+        { className: 'case__header' },
+        CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement('img', { className: 'case__header__img', src: picture }),
+        CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement('div', { className: 'case__header__substrate' }),
+        CaseHeader___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement('h1', { dangerouslySetInnerHTML: { __html: children } })
+    );
+}
 // CONCATENATED MODULE: ./src/components/case/CaseMediaPictures.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_prototype_of__);
@@ -6050,10 +6050,10 @@ function CaseMedia(_ref) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_photoswipe__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_react_photoswipe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_react_photoswipe__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Case_css__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Case_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__Case_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_photoswipe_lib_photoswipe_css__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_react_photoswipe_lib_photoswipe_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_react_photoswipe_lib_photoswipe_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_photoswipe_lib_photoswipe_css__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_photoswipe_lib_photoswipe_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_react_photoswipe_lib_photoswipe_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Case_css__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Case_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__Case_css__);
 
 
 
@@ -6084,6 +6084,15 @@ function getThumbnailContent(_ref) {
     );
 }
 
+function createMediaPictures(pictures) {
+    return pictures.map(function (pic) {
+        pic.w = pic.w || 1280;
+        pic.h = pic.h || 720;
+        pic.thumbnail = pic.thumbnail || pic.src;
+        return pic;
+    });
+}
+
 var CaseMediaPictures = function (_React$Component) {
     __WEBPACK_IMPORTED_MODULE_4_babel_runtime_helpers_inherits___default.a(CaseMediaPictures, _React$Component);
 
@@ -6109,21 +6118,25 @@ var CaseMediaPictures = function (_React$Component) {
 }(__WEBPACK_IMPORTED_MODULE_5_react__["default"].Component);
 
 /* harmony default export */ var CaseMediaPictures_defaultExport = (CaseMediaPictures);
+// CONCATENATED MODULE: ./src/components/case/index.js
+
+
+
+
+
+
+
+
+
+
 // CONCATENATED MODULE: ./src/content/cases/stone-quality/CaseStoneQuality.js
 /* harmony import */ var CaseStoneQuality___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_description_md__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_description_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__text_description_md__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_header_html__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_header_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__text_header_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__text_media_quality_screen_html__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__text_media_quality_screen_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__text_media_quality_screen_html__);
-
-
-
-
-
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__text_description_md__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__text_description_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__text_description_md__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__text_header_html__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__text_header_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__text_header_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__text_media_quality_screen_html__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__text_media_quality_screen_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__text_media_quality_screen_html__);
 
 
 
@@ -6135,12 +6148,10 @@ var ASSETS = './cases/stone-quality';
 var HEADER_PIC = ASSETS + '/header-pic.png';
 var BLUEPRINT_PIC = ASSETS + '/blueprint.png';
 
-var PICTURES = [{
-    title: __WEBPACK_IMPORTED_MODULE_11__text_media_quality_screen_html___default.a,
-    src: ASSETS + '/media-quality-screen.jpg',
-    thumbnail: ASSETS + '/media-quality-screen.jpg',
-    w: 1280, h: 720
-}];
+var PICTURES = createMediaPictures([{
+    title: __WEBPACK_IMPORTED_MODULE_4__text_media_quality_screen_html___default.a,
+    src: ASSETS + '/media-quality-screen.jpg'
+}]);
 
 function CaseStoneQuality() {
     return CaseStoneQuality___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
@@ -6149,7 +6160,7 @@ function CaseStoneQuality() {
         CaseStoneQuality___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
             CaseHeader,
             { picture: HEADER_PIC },
-            __WEBPACK_IMPORTED_MODULE_10__text_header_html___default.a
+            __WEBPACK_IMPORTED_MODULE_3__text_header_html___default.a
         ),
         CaseStoneQuality___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
             CaseContent,
@@ -6160,7 +6171,7 @@ function CaseStoneQuality() {
                 CaseStoneQuality___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
                     CaseText,
                     null,
-                    __WEBPACK_IMPORTED_MODULE_9__text_description_md___default.a
+                    __WEBPACK_IMPORTED_MODULE_2__text_description_md___default.a
                 ),
                 CaseStoneQuality___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(CaseDescriptionBlueprint, { picture: BLUEPRINT_PIC })
             ),
@@ -6174,21 +6185,14 @@ function CaseStoneQuality() {
 }
 // CONCATENATED MODULE: ./src/content/cases/drone/CaseDrone.js
 /* harmony import */ var CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_description_md__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_description_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__text_description_md__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_header_html__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_header_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__text_header_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_media_panel_html__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_media_panel_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__text_media_panel_html__);
+/* harmony import */ var CaseDrone___WEBPACK_IMPORTED_MODULE_2__text_description_md__ = __webpack_require__(148);
+/* harmony import */ var CaseDrone___WEBPACK_IMPORTED_MODULE_2__text_description_md___default = __webpack_require__.n(CaseDrone___WEBPACK_IMPORTED_MODULE_2__text_description_md__);
+/* harmony import */ var CaseDrone___WEBPACK_IMPORTED_MODULE_3__text_header_html__ = __webpack_require__(149);
+/* harmony import */ var CaseDrone___WEBPACK_IMPORTED_MODULE_3__text_header_html___default = __webpack_require__.n(CaseDrone___WEBPACK_IMPORTED_MODULE_3__text_header_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__text_media_panel_html__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__text_media_panel_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__text_media_panel_html__);
 
 
-
-
-
-
-
-
-// import CaseMediaPicture from '../../../components/case/CaseMediaPicture.js';
 
 var CaseDrone_ASSETS = './cases/drone';
 var CaseDrone_HEADER_PIC = CaseDrone_ASSETS + '/header-pic.png';
@@ -6198,6 +6202,13 @@ var CaseDrone_BLUEPRINT_PIC = CaseDrone_ASSETS + '/blueprint.png';
 
 
 
+var CaseDrone_PICTURES = createMediaPictures([{
+    src: CaseDrone_ASSETS + '/media-view.jpg'
+}, {
+    src: CaseDrone_ASSETS + '/media-panel.jpg',
+    title: __WEBPACK_IMPORTED_MODULE_4__text_media_panel_html___default.a
+}]);
+
 function CaseDrone() {
     return CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
         CaseSection,
@@ -6205,7 +6216,7 @@ function CaseDrone() {
         CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
             CaseHeader,
             { picture: CaseDrone_HEADER_PIC },
-            __WEBPACK_IMPORTED_MODULE_9__text_header_html___default.a
+            CaseDrone___WEBPACK_IMPORTED_MODULE_3__text_header_html___default.a
         ),
         CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
             CaseContent,
@@ -6216,31 +6227,28 @@ function CaseDrone() {
                 CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
                     CaseText,
                     null,
-                    __WEBPACK_IMPORTED_MODULE_8__text_description_md___default.a
+                    CaseDrone___WEBPACK_IMPORTED_MODULE_2__text_description_md___default.a
                 ),
                 CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(CaseDescriptionBlueprint, { picture: CaseDrone_BLUEPRINT_PIC })
             ),
-            CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(CaseMedia, null)
+            CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+                CaseMedia,
+                null,
+                CaseDrone___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(CaseMediaPictures_defaultExport, { pictures: CaseDrone_PICTURES })
+            )
         )
     );
 }
 // CONCATENATED MODULE: ./src/content/cases/mosaic/CaseMosaic.js
 /* harmony import */ var CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_header_html__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_header_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__text_header_html__);
-/* harmony import */ var CaseMosaic___WEBPACK_IMPORTED_MODULE_9__text_description_md__ = __webpack_require__(152);
-/* harmony import */ var CaseMosaic___WEBPACK_IMPORTED_MODULE_9__text_description_md___default = __webpack_require__.n(CaseMosaic___WEBPACK_IMPORTED_MODULE_9__text_description_md__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_media_mosaic_html__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_media_mosaic_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__text_media_mosaic_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__text_header_html__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__text_header_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__text_header_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__text_description_md__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__text_description_md___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__text_description_md__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__text_media_mosaic_html__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__text_media_mosaic_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__text_media_mosaic_html__);
 
 
-
-
-
-
-
-
-// import CaseMediaPicture from '../../../components/case/CaseMediaPicture.js';
 
 var CaseMosaic_ASSETS = './cases/mosaic';
 var CaseMosaic_HEADER_PIC = CaseMosaic_ASSETS + '/header-pic.png';
@@ -6250,6 +6258,11 @@ var CaseMosaic_BLUEPRINT_PIC = CaseMosaic_ASSETS + '/blueprint.png';
 
 
 
+var CaseMosaic_PICTURES = createMediaPictures([{
+    title: __WEBPACK_IMPORTED_MODULE_4__text_media_mosaic_html___default.a,
+    src: CaseMosaic_ASSETS + '/media-mosaic.jpg'
+}]);
+
 function CaseMosaic() {
     return CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
         CaseSection,
@@ -6257,7 +6270,7 @@ function CaseMosaic() {
         CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
             CaseHeader,
             { picture: CaseMosaic_HEADER_PIC },
-            __WEBPACK_IMPORTED_MODULE_8__text_header_html___default.a
+            __WEBPACK_IMPORTED_MODULE_2__text_header_html___default.a
         ),
         CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
             CaseContent,
@@ -6268,11 +6281,15 @@ function CaseMosaic() {
                 CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
                     CaseText,
                     null,
-                    CaseMosaic___WEBPACK_IMPORTED_MODULE_9__text_description_md___default.a
+                    __WEBPACK_IMPORTED_MODULE_3__text_description_md___default.a
                 ),
                 CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(CaseDescriptionBlueprint, { picture: CaseMosaic_BLUEPRINT_PIC })
             ),
-            CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(CaseMedia, null)
+            CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+                CaseMedia,
+                null,
+                CaseMosaic___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(CaseMediaPictures_defaultExport, { pictures: CaseMosaic_PICTURES })
+            )
         )
     );
 }
