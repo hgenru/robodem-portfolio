@@ -12,7 +12,7 @@ function getThumbnailContent({title, src, thumbnail, w, h}) {
                 src={thumbnail}
                 className="pswp-thumbnail"
             />
-            <figcaption>{title}</figcaption>
+            <figcaption dangerouslySetInnerHTML={{__html: title}}/>
         </figure>
     );
 }
