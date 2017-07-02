@@ -1,5 +1,20 @@
+.cases_wrapper
+{
+    position: absolute;
+    width: 100%;
+    top: 70vh;
+    background: white;
+}
+
 .cases
 {
     padding-right: 1em;
     padding-left: 1em;
+}
+
+@media (max-width : 768px) {
+    .cases_wrapper
+    {
+        position: static;
+    }
 }

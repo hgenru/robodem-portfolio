@@ -1,3 +1,12 @@
+.intro_section_wrapper
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 70vh;
+    background: blue;
+}
+
 .intro_section
 {
     height: 100vh;
@@ -24,6 +33,11 @@
 }
 
 @media (max-width : 768px) {
+    .intro_section_wrapper
+    {
+        position: static;
+    }
+
     .intro_section
     {
         height: 100%;

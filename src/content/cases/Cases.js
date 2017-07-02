@@ -7,10 +7,12 @@ import CaseMosaic from './mosaic/CaseMosaic';
 
 export default function Cases() {
     return (
-        <section className="cases">
-            <CaseStoneQuality/>
-            <CaseDrone/>
-            <CaseMosaic/>
-        </section>
+        <div className="cases_wrapper">
+            <section className="cases content">
+                <CaseStoneQuality/>
+                <CaseDrone/>
+                <CaseMosaic/>
+            </section>
+        </div>
     );
 }

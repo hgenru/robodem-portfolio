@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {createHistory} from 'history';
+import {createHashHistory} from 'history';
 import {Router, Route, useRouterHistory} from 'react-router';
 import {Home} from './src/pages/home/Home.js';
 
@@ -13,7 +13,7 @@ function createApp() {
     if (global.window) {
         basename = location.pathname;
     }
-    const browserHistory = useRouterHistory(createHistory)({basename});
+    const browserHistory = useRouterHistory(createHashHistory)({basename});
     return (
         <Router routes={routes} history={browserHistory}/>
     );

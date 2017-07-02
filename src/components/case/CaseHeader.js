@@ -6,7 +6,7 @@ export default function CaseHeader({children, picture}) {
         <header className="case__header">
             <img className="case__header__img" src={picture}/>
             <div className="case__header__substrate"/>
-            <h1>{children}</h1>
+            <h1 dangerouslySetInnerHTML={{__html: children}}/>
         </header>
     );
 }
