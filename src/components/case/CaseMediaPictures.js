@@ -5,12 +5,11 @@ import './Case.css';
 
 function getThumbnailContent({title, src, thumbnail, w, h}) {
     return (
-        <figure>
+        <figure className="pswp-thumbnail">
             <img
                 width={w}
                 height={h}
                 src={thumbnail}
-                className="pswp-thumbnail"
             />
             <figcaption dangerouslySetInnerHTML={{__html: title}}/>
         </figure>
@@ -31,6 +30,7 @@ export default class CaseMediaPictures extends React.Component {
         const {pictures} = this.props;
         return (
             <PhotoSwipeGallery
+                options={{}}
                 items={pictures}
                 thumbnailContent={getThumbnailContent}
             />
