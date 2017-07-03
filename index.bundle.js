@@ -6073,12 +6073,11 @@ function getThumbnailContent(_ref) {
 
     return __WEBPACK_IMPORTED_MODULE_5_react__["default"].createElement(
         'figure',
-        null,
+        { className: 'pswp-thumbnail' },
         __WEBPACK_IMPORTED_MODULE_5_react__["default"].createElement('img', {
             width: w,
             height: h,
-            src: thumbnail,
-            className: 'pswp-thumbnail'
+            src: thumbnail
         }),
         __WEBPACK_IMPORTED_MODULE_5_react__["default"].createElement('figcaption', { dangerouslySetInnerHTML: { __html: title } })
     );
@@ -6108,6 +6107,7 @@ var CaseMediaPictures = function (_React$Component) {
             var pictures = this.props.pictures;
 
             return __WEBPACK_IMPORTED_MODULE_5_react__["default"].createElement(__WEBPACK_IMPORTED_MODULE_6_react_photoswipe__["PhotoSwipeGallery"], {
+                options: {},
                 items: pictures,
                 thumbnailContent: getThumbnailContent
             });
