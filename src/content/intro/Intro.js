@@ -21,6 +21,14 @@ export default function Intro() {
                     <p className="intro_section__text">
                         Разработаем системы, которые «видят» окружающие предметы и самостоятельно работают с ними.
                     </p>
+                    <p className="intro_section__text">
+                        <a className="intro_section__link" href="mailto: a.ershov@robodem.com">
+                            a.ershov@robodem.com
+                        </a>
+                        <a className="intro_section__link" href="tel:+7 (925) 328-57-55">
+                            +7 (925) 328-57-55
+                        </a>
+                    </p>
                 </header>
             </section>
         </div>

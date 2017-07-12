@@ -49,6 +49,13 @@
     max-width: 30em;
 }
 
+.intro_section__link
+{
+    display: block;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
 @media (max-width : 768px) {
     .intro_section_wrapper
     {
