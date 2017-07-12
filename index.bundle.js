@@ -5936,6 +5936,20 @@ function Intro() {
                     'p',
                     { className: 'intro_section__text' },
                     '\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u0435\u043C \u0441\u0438\u0441\u0442\u0435\u043C\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \xAB\u0432\u0438\u0434\u044F\u0442\xBB \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0438\u0435 \u043F\u0440\u0435\u0434\u043C\u0435\u0442\u044B \u0438 \u0441\u0430\u043C\u043E\u0441\u0442\u043E\u044F\u0442\u0435\u043B\u044C\u043D\u043E \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442 \u0441 \u043D\u0438\u043C\u0438.'
+                ),
+                Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+                    'p',
+                    { className: 'intro_section__text' },
+                    Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+                        'a',
+                        { className: 'intro_section__link', href: 'mailto: a.ershov@robodem.com' },
+                        'a.ershov@robodem.com'
+                    ),
+                    Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+                        'a',
+                        { className: 'intro_section__link', href: 'tel:+7 (925) 328-57-55' },
+                        '+7 (925) 328-57-55'
+                    )
                 )
             )
         )
