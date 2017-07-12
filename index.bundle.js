@@ -5901,10 +5901,26 @@ function createRouterHistory(createHistory) {
 
 
 
+var YOUTUBE_EMBDED_CODE = 'ntK0wxP7Las';
+var YOUTUBE_URL = 'https://www.youtube.com/embed/' + YOUTUBE_EMBDED_CODE + '?' + ('controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=' + YOUTUBE_EMBDED_CODE);
+
 function Intro() {
     return Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
         'div',
         { className: 'intro_section_wrapper' },
+        Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+            'div',
+            { className: 'video' },
+            Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+                'div',
+                { className: 'video__background' },
+                Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
+                    'div',
+                    { className: 'video__foreground' },
+                    Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement('iframe', { src: YOUTUBE_URL, frameborder: '0', allowfullscreen: true })
+                )
+            )
+        ),
         Intro___WEBPACK_IMPORTED_MODULE_0_react__["default"].createElement(
             'section',
             { className: 'intro_section content' },
