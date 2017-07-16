@@ -34,8 +34,15 @@ module.exports = ({staticBuilderEnv} = {}) => {
                     loader: 'babel-loader',
                     options: {
                         presets: ['react', ['babel-preset-es2015', {modules: false}]],
-                        plugins: ['babel-plugin-transform-runtime']
-                    },
+                        plugins: [
+                            'babel-plugin-transform-runtime',
+                            'syntax-dynamic-import',
+                            'react-require',
+                            ['import-inspector', {
+                                serverSideRequirePath: true
+                            }]
+                        ]
+                    }
                 },
                 {
                     test: /\.css$/,

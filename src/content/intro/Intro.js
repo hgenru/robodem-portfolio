@@ -7,30 +7,47 @@ const YOUTUBE_URL = `https://www.youtube.com/embed/${YOUTUBE_EMBDED_CODE}?` +
 
 export default function Intro() {
     return (
-        <div className="intro_section_wrapper">
-            <div className="video">
-                <div className="video__background">
-                    <div className="video__foreground">
-                        <iframe src={YOUTUBE_URL} frameborder="0" allowfullscreen/>
+        <div>
+            <div className="intro_nav_top_container">
+                <nav className="intro_nav_top">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div className="intro_content_fixed_container">
+                <div className="intro_video">
+                    <div className="intro_video__background">
+                        <div className="intro_video__foreground">
+                            <iframe src={YOUTUBE_URL} frameborder="0" allowfullscreen/>
+                        </div>
                     </div>
                 </div>
+                <section className="intro_content">
+                    <div className="content">
+                        <header className="intro_content__header">
+                            <h1 className="intro_content__head">Robodem</h1>
+                            <p className="intro_content__text">
+                                Разработаем системы, которые «видят» окружающие предметы и самостоятельно работают с ними.
+                            </p>
+                            <p className="intro_content__text">
+                                <div className="intro_content__link_block">
+                                    <a href="mailto: a.ershov@robodem.com">
+                                        a.ershov@robodem.com
+                                    </a>
+                                </div>
+                                <div className="intro_content__link_block">
+                                    <a href="tel:+7 (925) 328-57-55">
+                                        +7 (925) 328-57-55
+                                    </a>
+                                </div>
+                            </p>
+                        </header>
+                    </div>
+                </section>
             </div>
-            <section className="intro_section content">
-                <header className="intro_section__header">
-                    <h1 className="intro_section__head">Robodem</h1>
-                    <p className="intro_section__text">
-                        Разработаем системы, которые «видят» окружающие предметы и самостоятельно работают с ними.
-                    </p>
-                    <p className="intro_section__text">
-                        <a className="intro_section__link" href="mailto: a.ershov@robodem.com">
-                            a.ershov@robodem.com
-                        </a>
-                        <a className="intro_section__link" href="tel:+7 (925) 328-57-55">
-                            +7 (925) 328-57-55
-                        </a>
-                    </p>
-                </header>
-            </section>
         </div>
     );
 }

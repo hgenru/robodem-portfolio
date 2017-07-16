@@ -1,6 +1,6 @@
 .case
 {
-    margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .case__header
@@ -134,7 +134,7 @@
 @media (max-width : 768px) {
     .case
     {
-        margin-top: 4rem;
+        margin-bottom: 3rem;
     }
 
     .case__header

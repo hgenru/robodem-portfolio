@@ -2,20 +2,24 @@
 {
     position: absolute;
     width: 100%;
-    top: 70vh;
+    padding-top: 6em;
+    margin-top: 80vh;
+    margin-bottom: 80vh;
     background: white;
-    padding-bottom: 3em;
 }
 
 .cases
 {
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
-@media (max-width : 768px) {
+@media (max-width: 768px) {
     .cases_wrapper
     {
         position: static;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 3em;
     }
 }
