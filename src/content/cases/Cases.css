@@ -1,12 +1,14 @@
 .cases_wrapper
 {
     position: absolute;
+    pointer-events: none;
     width: 100%;
 
 }
 
 .cases_container
 {
+    pointer-events: all;
     width: 100%;
     background: white;
     padding-top: 6em;
