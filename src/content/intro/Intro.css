@@ -13,13 +13,14 @@
     position: relative;
     position: sticky;
     top: 0;
-    height: 70px;
+    min-height: 70px;
     background: white;
     z-index: 1;
     padding-right: 1rem;
     padding-left: 1rem;
     font-size: 1.5rem;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .intro_nav_top > ul,
@@ -32,6 +33,7 @@
 .intro_nav_top > ul
 {
     display: block;
+    line-height: 1.5;
 }
 
 .intro_nav_top > ul > li
