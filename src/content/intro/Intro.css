@@ -16,12 +16,34 @@
     height: 70px;
     background: white;
     z-index: 1;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
 }
 
 .intro_nav_top > ul,
 .intro_nav_top > ul > li
 {
+    -webkit-appearance: none;
+    padding: 0;
+}
+
+.intro_nav_top > ul
+{
+    display: block;
+}
+
+.intro_nav_top > ul > li
+{
     display: inline-block;
+    margin-right: 1rem;
+
+}
+
+.intro_nav_top > ul > li > a
+{
+    color: black;
 }
 
 .intro_content_fixed_container
@@ -140,20 +162,5 @@
     {
         width: 200%;
         left: -50%;
-    }
-}
-
-@keyframes adjustHue {
-    0% {
-        filter: hue-rotate(30deg);
-        -webkit-filter: hue-rotate(30deg);
-    }
-    50% {
-        filter: hue-rotate(60deg);
-        -webkit-filter: hue-rotate(60deg);
-    }
-    100% {
-        filter: hue-rotate(60deg);
-        -webkit-filter: hue-rotate(90deg);
     }
 }

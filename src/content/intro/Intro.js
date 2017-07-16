@@ -10,10 +10,11 @@ export default function Intro() {
         <div>
             <div className="intro_nav_top_container">
                 <nav className="intro_nav_top">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="content">
+                        <li><a href="http://robodem.ru/about">О компании</a></li>
+                        <li><a href="http://robodem.ru/media">СМИ о нас</a></li>
+                        <li><a href="http://robodem.ru/blog">Блог</a></li>
+                        <li><a href="http://robodem.ru/contacts">Коонтакты</a></li>
                     </ul>
                 </nav>
             </div>
