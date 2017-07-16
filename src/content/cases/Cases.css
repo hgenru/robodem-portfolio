@@ -11,7 +11,22 @@
     pointer-events: all;
     width: 100%;
     background: white;
-    padding-top: 6em;
+}
+
+.cases__header
+{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: 4rem;
+}
+
+.cases__header > h2
+{
+    margin: 0;
+    font-weight: 300;
+    font-size: 4rem;
 }
 
 .cases_expander
@@ -41,9 +56,15 @@
         position: static;
     }
 
-    .cases_container
+    .cases__header
     {
-        padding-top: 3em;
+        padding-top: 0.7rem;
+        padding-bottom: 1rem;
+    }
+
+    .cases__header > h2
+    {
+        font-size: 2rem;
     }
 
     .cases_expander

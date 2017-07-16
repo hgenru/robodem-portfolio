@@ -10,10 +10,17 @@ export default function Cases() {
         <div className="cases_wrapper">
             <div className="cases_expander cases_expander--top"/>
             <div className="cases_container">
-                <section className="cases content">
-                    <CaseStoneQuality/>
-                    <CaseDrone/>
-                    <CaseMosaic/>
+                <section className="cases">
+                    <div className="content">
+                        <header className="cases__header">
+                            <h2>Портфолио</h2>
+                        </header>
+                    </div>
+                    <div className="content">
+                        <CaseStoneQuality/>
+                        <CaseDrone/>
+                        <CaseMosaic/>
+                    </div>
                 </section>
             </div>
             <div className="cases_expander cases_expander--bottom"/>

@@ -8,7 +8,7 @@
     position: relative;
     font-size: 3rem;
     max-width: 40rem;
-    margin-bottom: 0.7em;
+    margin-bottom: 0.3em;
 }
 
 .case__header__substrate,
@@ -23,7 +23,7 @@
     height: 4em;
     width: 4em;
     left: -1rem;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .case__header__img
@@ -32,10 +32,12 @@
     left: -2em;
 }
 
-.case__header > h1
+.case__header > h3
 {
     position: relative;
     margin: 0;
+    font-weight: 300;
+    font-size: 3rem;
 }
 
 .case__content
@@ -137,7 +139,7 @@
         margin-bottom: 3rem;
     }
 
-    .case__header
+    .case__header > h3
     {
         font-size: 1.5rem;
     }
