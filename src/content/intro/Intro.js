@@ -14,7 +14,7 @@ export default function Intro() {
                         <li><a href="http://robodem.ru/about">О компании</a></li>
                         <li><a href="http://robodem.ru/media">СМИ о нас</a></li>
                         <li><a href="http://robodem.ru/blog">Блог</a></li>
-                        <li><a href="http://robodem.ru/contacts">Коонтакты</a></li>
+                        <li><a href="http://robodem.ru/contacts">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
