@@ -2,10 +2,29 @@
 {
     position: absolute;
     width: 100%;
-    padding-top: 6em;
-    margin-top: 80vh;
-    margin-bottom: 80vh;
+
+}
+
+.cases_container
+{
+    width: 100%;
     background: white;
+    padding-top: 6em;
+}
+
+.cases_expander
+{
+    height: 80vh;
+}
+
+.cases_expander--top
+{
+    min-height: 400px;
+}
+
+.cases_expander--bottom
+{
+    min-height: 500px;
 }
 
 .cases
@@ -18,8 +37,15 @@
     .cases_wrapper
     {
         position: static;
-        margin-top: 0;
-        margin-bottom: 0;
+    }
+
+    .cases_container
+    {
         padding-top: 3em;
+    }
+
+    .cases_expander
+    {
+        display: none;
     }
 }
