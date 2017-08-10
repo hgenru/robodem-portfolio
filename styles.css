@@ -180,7 +180,29 @@ a:hover
     height: auto;
 }
 
-.case__text_youtube_video_wrapper
+.case__text blockquote
+{
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    padding: 1.3em 1em;
+    margin: 0;
+}
+
+.case__text blockquote p
+{
+    position: relative;
+    margin: 0;
+}
+
+.case__text blockquote cite
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.case__youtube_video_wrapper
 {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -188,7 +210,7 @@ a:hover
     height: 0;
 }
 
-.case__text_youtube_video_wrapper iframe
+.case__youtube_video_wrapper iframe
 {
     position: absolute;
     top: 0;
