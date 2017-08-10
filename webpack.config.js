@@ -93,6 +93,7 @@ module.exports = ({staticBuilderEnv} = {}) => {
                 }
             }),
             
+            new webpack.optimize.UglifyJsPlugin(),
             new webpack.optimize.AggressiveMergingPlugin(),
             new webpack.optimize.OccurrenceOrderPlugin(),
             new webpack.optimize.ModuleConcatenationPlugin()

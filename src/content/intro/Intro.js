@@ -5,6 +5,16 @@ const YOUTUBE_EMBDED_CODE = 'ntK0wxP7Las';
 const YOUTUBE_URL = `https://www.youtube.com/embed/${YOUTUBE_EMBDED_CODE}?` +
     `controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=${YOUTUBE_EMBDED_CODE}`;
 
+function YoutubeBackVideo() {
+    if (global.window) {
+        var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 1000);
+        if (viewportWidth > 768) {
+            return (<iframe src={YOUTUBE_URL} frameborder="0" allowfullscreen/>);
+        }
+    }
+    return null;
+}
+
 export default function Intro() {
     return (
         <div>
@@ -18,28 +28,28 @@ export default function Intro() {
                     </ul>
                 </nav>
             </div>
-            <div className="intro_content_fixed_container">
+            <div className="intro_fixed_container">
                 <div className="intro_video">
                     <div className="intro_video__background">
                         <div className="intro_video__foreground">
-                            <iframe src={YOUTUBE_URL} frameborder="0" allowfullscreen/>
+                            <YoutubeBackVideo/>
                         </div>
                     </div>
                 </div>
-                <section className="intro_content">
+                <section className="intro">
                     <div className="content">
-                        <header className="intro_content__header">
-                            <h1 className="intro_content__head">Robodem</h1>
-                            <p className="intro_content__text">
+                        <header className="intro__header">
+                            <h1 className="intro__head">Robodem</h1>
+                            <p className="intro__text">
                                 Разработаем системы, которые «видят» окружающие предметы и самостоятельно работают с ними.
                             </p>
-                            <p className="intro_content__text">
-                                <div className="intro_content__link_block">
+                            <p className="intro__text">
+                                <div className="intro__link_block">
                                     <a href="mailto: a.ershov@robodem.com">
                                         a.ershov@robodem.com
                                     </a>
                                 </div>
-                                <div className="intro_content__link_block">
+                                <div className="intro__link_block">
                                     <a href="tel:+7 (925) 328-57-55">
                                         +7 (925) 328-57-55
                                     </a>

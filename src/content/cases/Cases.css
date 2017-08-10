@@ -11,37 +11,27 @@
     pointer-events: all;
     width: 100%;
     background: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .cases__header
 {
     text-transform: uppercase;
-    font-size: 1.5em;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    font-size: 4rem;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    border-bottom: solid 1px;
 }
 
 .cases__header > h2
 {
     margin: 0;
-    font-weight: 300;
-    font-size: 4rem;
 }
 
 .cases_expander
 {
     height: 80vh;
-}
-
-.cases_expander--top
-{
     min-height: 400px;
-}
-
-.cases_expander--bottom
-{
-    min-height: 500px;
 }
 
 .cases
