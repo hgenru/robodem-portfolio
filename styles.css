@@ -150,24 +150,34 @@ a:hover
     margin-bottom: 6rem;
 }
 
+.case__text h1,
+.case__text h2,
+.case__text p
+{
+    margin: 0;
+}
+
 .case__text h1
 {
     font-size: 3rem;
-    margin: 0;
     margin-bottom: 0.3em;
 }
 
 .case__text h2
 {
     font-size: 1.2em;
-    margin: 0;
     margin-bottom: 0.3em;
 }
 
 .case__text p
 {
-    margin: 0;
     margin-bottom: 1em;
+}
+
+.case__text img
+{
+    max-width: 100%;
+    height: auto;
 }
 
 .case__text_youtube_video_wrapper
