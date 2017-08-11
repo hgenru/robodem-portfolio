@@ -7,9 +7,13 @@
     pointer-events: none;
 }
 
-.intro_nav_top
+.intro_nav_top_container > *
 {
     pointer-events: all;
+}
+
+.intro_nav_top
+{
     position: relative;
     position: sticky;
     top: 0;
@@ -23,6 +27,93 @@
     padding-bottom: 1rem;
 }
 
+.menu_button
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 1rem;
+}
+
+.menu_button,
+.menu_button span
+{
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.menu_button--open
+{
+    border-color: black;
+}
+
+.menu_button_sticks_container
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menu_button span
+{
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.menu_button--open span
+{
+    background: black;
+}
+
+.menu_button span:nth-child(1)
+{
+    top: 0;
+}
+
+.menu_button span:nth-child(2)
+{
+    top: 50%;
+}
+
+.menu_button span:nth-child(3)
+{
+    bottom: 0;
+}
+
+.menu_button--open span:nth-child(1),
+.menu_button--open span:nth-child(3)
+{
+    top: 50%;
+    transform-origin: center center;
+}
+
+.menu_button--open span:nth-child(1)
+{
+    transform: rotate(-45deg);
+}
+
+.menu_button--open span:nth-child(3)
+{
+    transform: rotate(45deg);
+}
+
+.menu_button--open span:nth-child(2)
+{
+    opacity: 0;
+}
+
 .intro_nav_top > ul,
 .intro_nav_top > ul > li
 {
@@ -34,6 +125,7 @@
 {
     display: block;
     line-height: 1.5;
+    list-style-type: none;
 }
 
 .intro_nav_top > ul > li
@@ -77,10 +169,6 @@
     max-width: 960px;
 }
 
-.intro__header
-{
-}
-
 .intro__head
 {
     text-transform: uppercase;
@@ -92,6 +180,7 @@
 .intro__text
 {
     max-width: 30em;
+    margin-bottom: 0.5em;
 }
 
 .intro__link_block
@@ -135,13 +224,32 @@
 }
 
 @media (max-width: 768px) {
+    .intro_nav_top > ul > li
+    {
+        display: block;
+    }
+
     .intro_fixed_container,
-    .intro_nav_top_container,
     .intro
     {
+        position: static;
         height: 100%;
         height: initial;
-        position: static;
+    }
+
+    .intro_nav_top
+    {
+        position: relative;
+    }
+
+    .intro_nav_top--hidden
+    {
+        display: none;
+    }
+
+    .menu_button
+    {
+        display: block;
     }
 
     .intro
