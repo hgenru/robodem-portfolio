@@ -98,8 +98,7 @@ a:hover
 {
     text-transform: uppercase;
     font-size: 1.2em;
-    margin-bottom: 2rem;
-    border-bottom: solid 1px;
+    margin-bottom: 3rem;
 }
 
 .cases__header > h2
@@ -115,8 +114,8 @@ a:hover
 
 .cases
 {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 @media (max-width: 768px) {
@@ -127,8 +126,8 @@ a:hover
 
     .cases__header
     {
-        padding-top: 0.7rem;
-        padding-bottom: 1rem;
+        padding: 0 calc(1rem - 5px);
+        margin-bottom: 1rem;
     }
 
     .cases__header > h2
@@ -143,7 +142,9 @@ a:hover
 }
 .case
 {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
+    padding: calc(1rem - 5px);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .case__text h1,
@@ -180,8 +181,10 @@ a:hover
 {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
-    padding: 1.3em 1em;
+    padding: 0.7em;
+    padding-bottom: 1.3em;
     margin: 0;
+    margin-bottom: 1em;
 }
 
 .case__text blockquote p
@@ -196,6 +199,7 @@ a:hover
     display: block;
     width: 100%;
     text-align: right;
+    font-style: normal;
 }
 
 .case__youtube_video_wrapper
@@ -218,12 +222,12 @@ a:hover
 @media (max-width : 768px) {
     .case
     {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     .case__text > h1
     {
-        font-size: 1.5rem;
+        font-size: 1em;
     }
 
     .case__content
@@ -283,6 +287,7 @@ a:hover
     margin: 1rem;
 }
 
+.intro_nav_top,
 .menu_button,
 .menu_button span
 {
@@ -484,7 +489,8 @@ a:hover
 
     .intro_nav_top--hidden
     {
-        display: none;
+        pointer-events: none;
+        opacity: 0;
     }
 
     .menu_button
