@@ -1,17 +1,33 @@
 import FontFaceObserver from 'fontfaceobserver';
 
+
+const FONTS_LOAD_TIMEOUT = 5000;
+const MAX_PAGE_LOAD_TIME = 3000;
+const FONTS_NOT_LOADED_CLASS = 'fonts--not-loaded';
+
 export default function loadFonts() {
-    const font = new FontFaceObserver('Roboto');
-    const FONTS_NOT_LOADED = 'fonts--not-loaded';
-    const FONTS_LOADED = 'fonts--loaded'
     const root = document.documentElement;
-    root.classList.add(FONTS_NOT_LOADED);
-    font.load(null, 5000).then(() => {
-        root.classList.remove(FONTS_NOT_LOADED);
-        root.classList.add(FONTS_LOADED);
-    }, () => {
-        root.classList.remove(FONTS_NOT_LOADED);
-    });
+    const removeClass = () => root.classList.remove(FONTS_NOT_LOADED_CLASS);
+    try {
+        if ('navigationStart' in window.performance.timing) {
+            const loadTime = Date.now() - window.performance.timing.navigationStart;
+            if (loadTime > FONTS_LOAD_TIMEOUT) {
+                return;  // if page load on very bad internet avoid FOIT 
+            }
+        }
+        const robotoRegular = new FontFaceObserver('Roboto', {weight: 400});
+        const robotoBold = new FontFaceObserver('Roboto', {weight: 700});
+    
+        
+        root.classList.add(FONTS_NOT_LOADED_CLASS);
+        Promise.all([
+            robotoRegular.load(null, FONTS_LOAD_TIMEOUT),
+            robotoBold.load(null, FONTS_LOAD_TIMEOUT)
+        ]).then(removeClass, removeClass);
+    } catch (e) {
+        removeClass();
+    }
+
 }
 
 if (global.window) {

@@ -1,6 +1,7 @@
 body
 {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body *
@@ -10,12 +11,7 @@ body *
 
 .fonts--not-loaded body
 {
-    opacity: 0 !important;
-}
-
-.fonts--loaded body
-{
-    font-family: 'Roboto', sans-serif;
+    color: transparent !important;
 }
 
 .content
