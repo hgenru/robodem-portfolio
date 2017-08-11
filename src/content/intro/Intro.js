@@ -31,7 +31,7 @@ export default class Intro extends React.Component {
             <div>
                 <div className="intro_nav_top_container">
                     <nav className={"intro_nav_top" + (!isMenuOpen ? " intro_nav_top--hidden" : "")}>
-                        <ul class="content">
+                        <ul className="content">
                             <li><a href="http://robodem.ru/about">О компании</a></li>
                             <li><a href="http://robodem.ru/media">СМИ о нас</a></li>
                             <li><a href="http://robodem.ru/blog">Блог</a></li>
