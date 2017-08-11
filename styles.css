@@ -37,6 +37,7 @@
 body
 {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body *
@@ -46,12 +47,7 @@ body *
 
 .fonts--not-loaded body
 {
-    opacity: 0 !important;
-}
-
-.fonts--loaded body
-{
-    font-family: 'Roboto', sans-serif;
+    color: transparent !important;
 }
 
 .content
@@ -341,7 +337,6 @@ a:hover
 .menu_button--open span:nth-child(3)
 {
     top: 50%;
-    transform-origin: center center;
 }
 
 .menu_button--open span:nth-child(1)
