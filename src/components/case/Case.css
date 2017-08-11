@@ -1,6 +1,8 @@
 .case
 {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
+    padding: calc(1rem - 5px);
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .case__text h1,
@@ -39,6 +41,7 @@
     border-left: 10px solid #ccc;
     padding: 1.3em 1em;
     margin: 0;
+    margin-bottom: 1em;
 }
 
 .case__text blockquote p
@@ -75,12 +78,12 @@
 @media (max-width : 768px) {
     .case
     {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
 
     .case__text > h1
     {
-        font-size: 1.5rem;
+        font-size: 1em;
     }
 
     .case__content
