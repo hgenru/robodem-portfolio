@@ -96,7 +96,6 @@
 .menu_button--open span:nth-child(3)
 {
     top: 50%;
-    transform-origin: center center;
 }
 
 .menu_button--open span:nth-child(1)
