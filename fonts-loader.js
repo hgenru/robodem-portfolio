@@ -17,8 +17,7 @@ export default function loadFonts() {
         }
         const robotoRegular = new FontFaceObserver('Roboto', {weight: 400});
         const robotoBold = new FontFaceObserver('Roboto', {weight: 700});
-    
-        
+
         root.classList.add(FONTS_NOT_LOADED_CLASS);
         Promise.all([
             robotoRegular.load(null, FONTS_LOAD_TIMEOUT),
