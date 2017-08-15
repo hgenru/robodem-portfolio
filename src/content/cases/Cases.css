@@ -39,6 +39,29 @@
     padding-left: 5px;
 }
 
+.cases__call_to_action
+{
+    margin-top: 6rem;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.call_to_action__header
+{
+    max-width: 15em;
+}
+
+.call_to_action__link_block
+{
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.call_to_action__link_block > a
+{
+    color: black;
+}
+
 @media (max-width: 768px) {
     .cases_wrapper
     {

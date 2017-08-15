@@ -26,6 +26,23 @@ export default function Cases() {
                         <CasePCB/>
                     </div>
                 </section>
+                <div className="cases__call_to_action">
+                    <div className="content">
+                        <h2 className="call_to_action__header">По любым вопросам звоните или пишите Александру</h2>
+                        <p>
+                            <div className="call_to_action__link_block">
+                                <a href="mailto: a.ershov@robodem.com">
+                                    a.ershov@robodem.com
+                                </a>
+                            </div>
+                            <div className="call_to_action__link_block">
+                                <a href="tel:+7 (925) 328-57-55">
+                                    +7 (925) 328-57-55
+                                </a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );

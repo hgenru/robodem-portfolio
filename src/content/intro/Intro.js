@@ -62,7 +62,7 @@ export default class Intro extends React.Component {
                             <header className="intro__header">
                                 <h1 className="intro__head">Robodem</h1>
                                 <p className="intro__text">
-                                    Разработаем системы, которые «видят» окружающие предметы и самостоятельно работают с ними.
+                                    Разработаем системы, которые «видят» окружающие предметы и самостоятельно работают с ними
                                 </p>
                                 <p className="intro__text">
                                     <div className="intro__link_block">
