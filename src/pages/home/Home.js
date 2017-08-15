@@ -10,7 +10,7 @@ import Cases from '../../content/cases/Cases';
 export const Home = () => (
     <main>
         <Helmet>
-            <title>Robodem | Примеры работ</title>
+            <title>Robodem | Портфолио</title>
         </Helmet>
         <Intro/>
         <Cases/>
