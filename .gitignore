@@ -58,4 +58,7 @@ typings/
 .env
 .vscode
 
+# MacOS X
+.DS_Store
+
 dist
