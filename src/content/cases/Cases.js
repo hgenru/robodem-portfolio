@@ -6,6 +6,7 @@ import CaseDrone from './drone/CaseDrone';
 import CaseMosaic from './mosaic/CaseMosaic';
 import CaseHook from './hook/CaseHook';
 import CasePCB from './pcb/CasePCB';
+import CaseQuqicRobot from './qubic/CaseQuqicRobot';
 
 export default function Cases() {
     return (
@@ -24,6 +25,7 @@ export default function Cases() {
                         <CaseDrone/>
                         <CaseMosaic/>
                         <CasePCB/>
+                        <CaseQuqicRobot/>
                     </div>
                 </section>
                 <div className="cases__call_to_action">
