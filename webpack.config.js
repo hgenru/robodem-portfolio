@@ -23,7 +23,8 @@ module.exports = ({staticBuilderEnv} = {}) => {
         entry,
         devtool: 'cheap-module-source-map',
         output: {
-            path: path.resolve(__dirname, 'dist'),
+            path: path.join(__dirname, 'dist/public/'),
+            publicPath:  'public/',
             filename: '[name].bundle.js'
         },
         module: {

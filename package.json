@@ -6,8 +6,8 @@
   "scripts": {
     "start": "npm run dist && http-server dist/",
     "watch": "watch 'npm start' src/",
-    "static-build": "NODE_ENV=production react-static-build -c webpack.config.js",
-    "copy-public": "cp -r public/* dist/ &",
+    "static-build": "NODE_ENV=production react-static-build -c webpack.config.js -d dist/",
+    "copy-public": "cp -r public/ dist/public &",
     "dist": "npm run clean && npm run static-build && npm run copy-public",
     "clean": "rm -rf dist/",
     "deploy": "gh-pages -d dist/"
